@@ -112,10 +112,9 @@ if(!is_null($events)){
 
                 default:
                     $textReplyMessage = "เรียกฉันได้ ถ้าให้ฉันบริการคุณ";
-				    $replyData = new TextMessageBuilder($textReplyMessage);
-
                     $picFullSize = 'https://esp100chon.herokuapp.com/image/manu.jpg';
                     $picThumbnail = 'https://esp100chon.herokuapp.com/image/manu.jpg';
+					$replyData = new TextMessageBuilder($textReplyMessage);
                     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
 
                     break;                                      
