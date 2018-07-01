@@ -70,7 +70,7 @@ if(!is_null($events)){
         case 'text':
             switch ($userMessage) {
                 case "robot1on":
-                    $textReplyMessage = "ฉัน เปิด แสงสว่างหน้าบ้านแล้ว ค่ะ";
+                    $textReplyMessage = "ฉัน เปิด แสงสว่าง หน้าบ้าน แล้วค่ะ";
                     $replyData = new TextMessageBuilder($textReplyMessage);
 
                     $file = fopen("digital_on_off.txt", "w");
@@ -81,7 +81,7 @@ if(!is_null($events)){
                     break;
 
                 case "robot1off":
-                    $textReplyMessage = "ฉัน ปิด แสงสว่างหน้าบ้านแล้ว ค่ะ";
+                    $textReplyMessage = "ฉัน ปิด แสงสว่าง หน้าบ้าน แล้วค่ะ";
                     $replyData = new TextMessageBuilder($textReplyMessage);
 
 					$file = fopen("digital_on_off.txt", "w");
