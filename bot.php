@@ -112,8 +112,8 @@ if(!is_null($events)){
 
                 default:
                     
-                    $picFullSize = 'https://esp100chon.herokuapp.com/image/manu.jpg';
-                    $picThumbnail = 'https://esp100chon.herokuapp.com/image/manu.jpg';
+                    $picFullSize = 'https://esp100chon.herokuapp.com/image/manu1.jpg';
+                    $picThumbnail = 'https://esp100chon.herokuapp.com/image/manu1.jpg';
                     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
                                         
 		            break;                                      
