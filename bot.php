@@ -74,9 +74,10 @@ if(!is_null($events)){
                     $replyData = new TextMessageBuilder($textReplyMessage);
 
                     $file = fopen("digital_on_off.txt", "w");
-                    $str = "1";
+                    $str = "robot1on";
                     fwrite($file,$str);
                     fclose($file);
+
                     break;
 
                 case "robot1off":
@@ -84,46 +85,97 @@ if(!is_null($events)){
                     $replyData = new TextMessageBuilder($textReplyMessage);
 
 					$file = fopen("digital_on_off.txt", "w");
-                    $str = "0";
+                    $str = "robot1off";
                     fwrite($file,$str);
                     fclose($file);
+
                     break;
 
                 case "robot2on":
-                    $textReplyMessage = "ฉัน เปิด แสงสว่างหลังบ้านแล้ว ค่ะ";
+                    $textReplyMessage = "ฉัน เปิด แสงสว่าง หลังบ้าน แล้วค่ะ";
                     $replyData = new TextMessageBuilder($textReplyMessage);
-                    break;
+                    $file = fopen("digital_on_off.txt", "w");
+                    $str = "robot2on";
+                    fwrite($file,$str);
+                    fclose($file);
+                    
+					break;
 
                 case "robot2off":
-                    $textReplyMessage = "ฉัน ปิด แสงสว่างหลังบ้านแล้ว ค่ะ";
+                    $textReplyMessage = "ฉัน ปิด แสงสว่าง หลังบ้าน แล้วค่ะ";
                     $replyData = new TextMessageBuilder($textReplyMessage);
-                    break;     
+                    $file = fopen("digital_on_off.txt", "w");
+                    $str = "robot2off";
+                    fwrite($file,$str);
+                    fclose($file);
+                    
+					break;     
 					
                 case "robot3on":
-                    $textReplyMessage = "ฉัน เปิด แสงสว่างในบ้านแล้ว ค่ะ";
+                    $textReplyMessage = "ฉัน เปิด แสงสว่าง ในบ้าน แล้วค่ะ";
                     $replyData = new TextMessageBuilder($textReplyMessage);
-                    break;
+                    $file = fopen("digital_on_off.txt", "w");
+                    $str = "robot3on";
+                    fwrite($file,$str);
+                    fclose($file);
+                    
+					break;
 
                 case "robot3off":
-                    $textReplyMessage = "ฉัน ปิด แสงสว่างในบ้านแล้ว ค่ะ";
+                    $textReplyMessage = "ฉัน ปิด แสงสว่าง ในบ้าน แล้วค่ะ";
                     $replyData = new TextMessageBuilder($textReplyMessage);
-                    break;     
+                    $file = fopen("digital_on_off.txt", "w");
+                    $str = "robot3off";
+                    fwrite($file,$str);
+                    fclose($file);
+                    
+					break;     
 
                 case "robot4on":
-                    $textReplyMessage = "ฉัน เปิด แสงสว่างโรงรถแล้ว ค่ะ";
+                    $textReplyMessage = "ฉัน เปิด แสงสว่าง โรงรถ แล้วค่ะ";
                     $replyData = new TextMessageBuilder($textReplyMessage);
-                    break;
+                    $file = fopen("digital_on_off.txt", "w");
+                    $str = "robot4on";
+                    fwrite($file,$str);
+                    fclose($file);
+                    
+					break;
 
                 case "robot4off":
-                    $textReplyMessage = "ฉัน ปิด แสงสว่างโรงรถแล้ว ค่ะ";
+                    $textReplyMessage = "ฉัน ปิด แสงสว่าง โรงรถ แล้วค่ะ";
                     $replyData = new TextMessageBuilder($textReplyMessage);
-                    break;  
+                    $file = fopen("digital_on_off.txt", "w");
+                    $str = "robot4off";
+                    fwrite($file,$str);
+                    fclose($file);
+                    
+					break;  
+
+                case "robot5on":
+                    $textReplyMessage = "ฉัน เปิด แสงสว่าง ทั้งบ้าน แล้วค่ะ";
+                    $replyData = new TextMessageBuilder($textReplyMessage);
+                    $file = fopen("digital_on_off.txt", "w");
+                    $str = "robot5on";
+                    fwrite($file,$str);
+                    fclose($file);
+                    
+					break;
+
+                case "robot5off":
+                    $textReplyMessage = "ฉัน ปิด แสงสว่าง ทั้งบ้าน แล้วค่ะ";
+                    $replyData = new TextMessageBuilder($textReplyMessage);
+                    $file = fopen("digital_on_off.txt", "w");
+                    $str = "robot5off";
+                    fwrite($file,$str);
+                    fclose($file);
+                    
+					break;  
 
 
                 default:
                     
-                    $picFullSize = 'https://esp100chon.herokuapp.com/image/manu1.jpg';
-                    $picThumbnail = 'https://esp100chon.herokuapp.com/image/manu1.jpg';
+                    $picFullSize = 'https://esp100chon.herokuapp.com/image/manu2.jpg';
+                    $picThumbnail = 'https://esp100chon.herokuapp.com/image/manu2.jpg';
                     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
                                         
 		            break;                                      
