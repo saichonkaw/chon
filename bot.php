@@ -114,8 +114,8 @@ if(!is_null($events)){
                     $textReplyMessage = "เรียกฉันได้ ถ้าให้ฉันบริการคุณ";
 				    $replyData = new TextMessageBuilder($textReplyMessage);
 
-                    $picFullSize = 'https://www.picz.in.th/image/Nz6rvZ';
-                    $picThumbnail = 'https://www.picz.in.th/image/Nz6rvZ';
+                    $picFullSize = 'https://esp100chon.herokuapp.com/image/manu.jpg';
+                    $picThumbnail = 'https://esp100chon.herokuapp.com/image/manu.jpg';
                     $replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
 
                     break;                                      
