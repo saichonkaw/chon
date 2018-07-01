@@ -113,10 +113,10 @@ if(!is_null($events)){
                 default:
                     $textReplyMessage = "เรียกฉันได้ ถ้าให้ฉันบริการคุณ";
                     $picFullSize = 'https://esp100chon.herokuapp.com/image/manu.jpg';
-                    //$picThumbnail = 'https://esp100chon.herokuapp.com/image/manu.jpg';
-					$replyData = new TextMessageBuilder($textReplyMessage,$picFullSize);
-                    //$replyData = new ImageMessageBuilder($picFullSize,$picThumbnail);
-
+                    $picThumbnail = 'https://esp100chon.herokuapp.com/image/manu.jpg';
+					$Data1 = new TextMessageBuilder($textReplyMessage);
+                    $Data2 = new ImageMessageBuilder($picFullSize,$picThumbnail);
+                    $replyData = $Data1,$Data2;
                     break;                                      
             }
             break;
