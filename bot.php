@@ -72,11 +72,21 @@ if(!is_null($events)){
                 case "robot1on":
                     $textReplyMessage = "ฉัน เปิด แสงสว่างหน้าบ้านแล้ว ค่ะ";
                     $replyData = new TextMessageBuilder($textReplyMessage);
+
+                    $file = fopen("digital_on_off.txt", "w");
+                    $str = "1";
+                    fwrite($file,$str);
+                    fclose($file);
                     break;
 
                 case "robot1off":
                     $textReplyMessage = "ฉัน ปิด แสงสว่างหน้าบ้านแล้ว ค่ะ";
                     $replyData = new TextMessageBuilder($textReplyMessage);
+
+					$file = fopen("digital_on_off.txt", "w");
+                    $str = "0";
+                    fwrite($file,$str);
+                    fclose($file);
                     break;
 
                 case "robot2on":
